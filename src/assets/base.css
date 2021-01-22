@@ -1,0 +1,79 @@
+/* 重置一下样式 并且给公用样式 */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* 默认的控件外观样式清除 */
+    appearance: none;
+    /* 把盒模型设置为border-box */
+    box-sizing: border-box;
+}
+
+html {
+    /* 响应式尺寸  320px iphone5 root-fontsize:20px 
+  vw: 1vw 3.2px 
+  */
+    font-size: 6.25vw;
+}
+
+body {
+    font-family: 'Microsoft Yahei';
+    color: #333;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+input,
+textarea {
+    outline: none;
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* 左浮动  右浮动 清除浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
