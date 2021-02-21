@@ -10,6 +10,14 @@ module.exports = {
                 pathRewrite: {
                     "^/api": ""
                 }
+            },
+            "/geci": {
+                target: "https://m3ws.kugou.com",
+                secure: false,
+                changeOrigin: true,
+                pathRewrite: {
+                    "^/geci": ""
+                }
             }
         }
     },
